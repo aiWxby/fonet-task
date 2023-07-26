@@ -8,7 +8,14 @@
     @apply p-0 m-0 box-border;
   }
 
+  ::selection {
+    @apply text-gray-200 bg-primary-500;
+  }
+
+  html {
+    @apply h-full;
+  }
   body {
-    @apply h-full p-2.5 bg-main-800 text-gray-200;
+    @apply h-full flex flex-col justify-center bg-secondary-800 text-gray-200;
   }
 }
