@@ -16,6 +16,6 @@
     @apply h-full;
   }
   body {
-    @apply h-full flex flex-col justify-center bg-secondary-800 text-gray-200;
+    @apply relative h-full flex flex-col justify-center bg-secondary-800 text-gray-200;
   }
 }
