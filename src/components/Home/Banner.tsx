@@ -1,4 +1,4 @@
-import homepage_sticker from "../assets/images/homepage_sticker.png";
+import homepage_sticker from "../../assets/images/homepage_sticker.png";
 
 function HomeContent() {
   return (
