@@ -1,9 +1,12 @@
+import Navbar from "./Layouts/Header"
 import HomePage from "./Pages/Home";
 
 function App() {
   return (
     <>
-      {/* TODO: Add navbar here */}
+      <header>
+        <Navbar />
+      </header>
       <main>
         <HomePage />
       </main>
