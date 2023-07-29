@@ -12,10 +12,7 @@
     @apply text-gray-200 bg-primary-500;
   }
 
-  html {
-    @apply h-full;
-  }
   body {
-    @apply relative h-full flex flex-col justify-center bg-secondary-800 text-gray-200;
+    @apply relative flex flex-col justify-center bg-secondary-800 text-gray-200;
   }
 }
