@@ -1,33 +1,29 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
+import RootLayout from "./Layouts/RootLayout";
 import HomePage from "./Pages/Home";
-//import Dashboard from "./Pages/Dashboard"
-import Report from "./Pages/Report"
+import Reports from "./Pages/Dashboard";
+import Report from "./Pages/Report";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage />,
-  },/*
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-  },*/
-  {
-    path: "/report",
-    element: <Report />,
-  },
-]);
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<HomePage />} />
+      <Route path="reports">
+        <Route index element={<Reports />} />
+        <Route path="add" element={<Report />} />
+      </Route>
+    </Route>
+  )
+);
 
 function App() {
-  return (
-    <>
-      {/* TODO: Add navbar here */}
-      <main className="my-10">
-        <RouterProvider router= {router} />
-      </main>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
