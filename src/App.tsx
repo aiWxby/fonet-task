@@ -12,7 +12,7 @@ import Report from "./Pages/Report";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route path="/" element={<RootLayout /> }>
       <Route index element={<HomePage />} />
       <Route path="reports">
         <Route index element={<Reports />} />
