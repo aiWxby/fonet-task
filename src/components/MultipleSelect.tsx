@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useFormikContext } from "formik";
 import { formDataList } from "../app/Helpers/Data/PredeterminedData";
 import { ReportTypes } from "../app/Helpers/Types/TypeDefinitions";

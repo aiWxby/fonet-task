@@ -1,5 +1,3 @@
-import React from "react";
-
 import Introduction from "../../components/Dashboard/Introduction";
 import DataTable from "../../components/Dashboard/DataTable";
 
