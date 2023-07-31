@@ -54,7 +54,7 @@ function Index() {
       >
         {({ isSubmitting }) => (
           <Form>
-            <div className="flex flex-wrap gap-5">
+            <div className="flex flex-wrap lg:flex-nowrap gap-5">
               <div className="w-full p-5 rounded-md shadow-lg bg-secondary-700 space-y-5">
                 <PatientInfoForm />
                 <GeneralInfoForm />
