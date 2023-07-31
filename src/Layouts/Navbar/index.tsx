@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 function Index() {
   return (
-    <nav className="w-full mt-5 mb-10">
-      <div className="w-2/4 m-auto p-2 rounded-lg bg-secondary-700">
-        <ul className="flex flex-row flex-nowrap space-x-4">
+    <nav className="mt-5 mb-10">
+      <div className="p-2 rounded-lg bg-secondary-700">
+        <ul className="flex flex-row flex-wrap space-x-0 sm:space-x-4">
           <NavLink
             to="/"
             className={({ isActive }) =>
