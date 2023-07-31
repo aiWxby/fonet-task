@@ -1,45 +1,44 @@
 import React from "react";
 
-type InputPropTypes = {
+type TextareaPropTypes = {
   id?: string;
+  parentWrapperClasses?: string;
   wrapperClasses?: string;
   labelClasses?: string;
   label?: string;
-  type: string;
-  inputClasses?: string;
+  textareaClasses?: string;
   placeholder?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: React.ChangeEventHandler<HTMLTextAreaElement>;
   value?: string | number;
   errors?: string | undefined;
   touched?: boolean | undefined;
 };
 
-function Input({
+function Textarea({
   id,
+  parentWrapperClasses,
   wrapperClasses,
   label,
   labelClasses,
-  type,
-  inputClasses,
+  textareaClasses,
   placeholder,
   onChange,
   value,
   errors,
   touched,
-}: InputPropTypes) {
+}: TextareaPropTypes) {
   return (
-    <div className="space-y-2">
+    <div className={parentWrapperClasses}>
       <div className={`${wrapperClasses}`}>
         {label && (
           <label htmlFor={id} className={`${labelClasses}`}>
             {label}
           </label>
         )}
-        <input
-          type={type}
+        <textarea
           id={id}
           placeholder={placeholder}
-          className={`${inputClasses}`}
+          className={`${textareaClasses}`}
           onChange={onChange}
           value={value}
         />
@@ -54,4 +53,4 @@ function Input({
   );
 }
 
-export default Input;
+export default Textarea;
