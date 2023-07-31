@@ -63,3 +63,11 @@ Günlere göre çalışma periyodu:
 - ChatGPT
 - Sayamadığım kadar fazla web site
 - Fonet: İlgili Task Dökümantasyonu
+
+------------
+
+### Notlar
+
+- Kendi eleştirilerimi yaptım ve hataların, eksiklerin farkındayım. Bu projeyi daha iyi yazabilirdim lâkin React ve bilhassa TypeScript tarafındaki eksiklerim beni geri planda tuttu. Bundan daha fazlasını yapabileceğimi biliyorum.
+
+Dürüstlük alnımın akıdır.
