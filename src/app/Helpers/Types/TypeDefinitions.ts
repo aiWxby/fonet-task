@@ -34,15 +34,15 @@ export type concatenatedReportTypes = {
   name: string;
   surname: string;
   age: number;
-  gender: Genders;
-  bloodGroup: BloodGroups;
-  rh: RhTypes;
-  isAssault: boolean;
-  reason: Reasons;
+  gender: Genders | null;
+  bloodGroup: BloodGroups | null;
+  rh: RhTypes | null;
+  isAssault: boolean | null;
+  reason: Reasons | null;
   detailOfReason: string;
   complaint: string;
   doctor: string;
-  organisation: string;
+  organisation: string | null;
   isProvided: boolean;
 };
 
