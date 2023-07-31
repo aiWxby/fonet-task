@@ -1,19 +1,32 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { ButtonTypes } from "../../app/Helpers/Enums/EnumDefinitions";
+
+import Button from "../Button";
 
 function Introduction() {
   return (
     <div className="space-y-10">
-      <h1 className="text-center text-4xl text-primary-500">Dashboard</h1>
+      <h1 className="text-center text-4xl text-primary-500">Raporlar</h1>
       <div className="space-y-4">
         <p className="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-          eligendi nesciunt sint quis incidunt exercitationem sunt sapiente
-          mollitia quibusdam porro provident optio ad deserunt aliquam, nostrum,
-          modi dolores quod voluptatem.
+          <i>Task'ın asıl bölümüne hoş geldin, yabancı!</i>
         </p>
-        <button className="block mx-auto px-8 py-1.5 rounded-lg bg-secondary-700 shadow-md hover:bg-primary-500 hover:text-gray-200 hover:-translate-y-1 transition-all">
-          Yeni Rapor Ekle
-        </button>
+        <p className="text-justify">
+          Bu sayfada; verileri aşağıdaki{" "}
+          <span className="text-primary-500">MUIDatatables</span> ile
+          görüntüleyebilir ve sıralayabilirsin. Şayet yeni bir rapor eklemek
+          istersen, aşağıdaki "
+          <span className="text-primary-500">Yeni Rapor Ekle</span>" butonunu
+          kullanarak, rapor ekleme sayfasına doğrudan gidebilirsin.
+        </p>
+        <NavLink to="/reports/add" className="block">
+          <Button
+            type={ButtonTypes.button}
+            label="Yeni Rapor Ekle"
+            buttonClasses="block mx-auto px-8 py-1.5 rounded-lg bg-secondary-700 shadow-md hover:bg-primary-500 hover:text-gray-200 hover:-translate-y-1 transition-all"
+          />
+        </NavLink>
       </div>
     </div>
   );

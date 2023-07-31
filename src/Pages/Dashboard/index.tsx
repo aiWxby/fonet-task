@@ -1,12 +1,17 @@
 import React from "react";
-import Introduction from "../../components/Dashboard/Introduction";
 
-function index() {
+import Introduction from "../../components/Dashboard/Introduction";
+import DataTable from "../../components/Dashboard/DataTable";
+
+function Index() {
   return (
-    <div className="w-2/4 mx-auto space-y-12">
+    <div className="space-y-12">
       <Introduction />
+      <div className="p-5 bg-secondary-900">
+        <DataTable />
+      </div>
     </div>
   );
 }
 
-export default index;
+export default Index;
