@@ -164,7 +164,7 @@ function GeneralInfo() {
                   : ""
               }`}
               listWrapperClasses="space-y-1"
-              listClasses="p-1 rounded-md cursor-pointer select-none"
+              listClasses="p-1 rounded-md cursor-pointer select-none hover:text-primary-500"
               targetData="peopleInRoom"
               errors={
                 formikContext.errors.reportInfos?.generalInfos?.peopleInRoom
