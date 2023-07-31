@@ -1,4 +1,3 @@
-import React from "react";
 import PatientInfoForm from "./PatientInfoForm";
 import GeneralInfoForm from "./GeneralInfoForm";
 import ReportSummary from "./ReportSummary";
