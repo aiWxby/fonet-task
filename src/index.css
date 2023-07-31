@@ -8,7 +8,11 @@
     @apply p-0 m-0 box-border;
   }
 
+::selection {
+    @apply text-gray-200 bg-primary-500;
+  }
+
   body {
-    @apply h-full p-2.5 bg-main-800 text-gray-200;
+    @apply w-full px-5 sm:w-3/4 xl:w-2/4 sm:mx-auto relative flex flex-col justify-center bg-secondary-800 text-gray-200;
   }
 }
