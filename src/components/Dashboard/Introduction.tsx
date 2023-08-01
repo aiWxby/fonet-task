@@ -8,10 +8,10 @@ function Introduction() {
     <div className="space-y-10">
       <h1 className="text-center text-4xl text-primary-500">Raporlar</h1>
       <div className="space-y-4">
-        <p className="text-center">
+        <p className="text-center text-secondary-300">
           <i>Task'ın asıl bölümüne hoş geldin, yabancı!</i>
         </p>
-        <p className="text-justify">
+        <p className="text-justify text-secondary-300">
           Bu sayfada; verileri aşağıdaki{" "}
           <span className="text-primary-500">MUIDatatables</span> ile
           görüntüleyebilir ve sıralayabilirsin. Şayet yeni bir rapor eklemek
