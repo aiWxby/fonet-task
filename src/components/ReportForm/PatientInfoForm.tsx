@@ -14,9 +14,9 @@ function PatientInfo() {
         <Input
           type="text"
           id="name"
-          placeholder="Adınızı yazınız."
+          placeholder="Hastanın adını yazınız."
           wrapperClasses="flex flex-col space-y-2"
-          label="Adınız (*):"
+          label="Adı (*):"
           labelClasses="text-secondary-300"
           inputClasses={`p-1.5 rounded-md outline-none bg-secondary-700 text-gray-400 focus:bg-secondary-800 focus:pl-4 transition-all ${
             formikContext.errors.reportInfos?.patientInfos?.name &&
@@ -37,9 +37,9 @@ function PatientInfo() {
         <Input
           type="text"
           id="surname"
-          placeholder="Soyadınızı yazınız."
+          placeholder="Hastanın soyadını yazınız."
           wrapperClasses="flex flex-col space-y-2"
-          label="Soyadınız (*):"
+          label="Soyadı (*):"
           labelClasses="text-secondary-300"
           inputClasses={`p-1.5 rounded-md outline-none bg-secondary-700 text-gray-400 focus:bg-secondary-800 focus:pl-4 transition-all ${
             formikContext.errors.reportInfos?.patientInfos?.surname &&
@@ -60,9 +60,9 @@ function PatientInfo() {
         <Input
           type="number"
           id="age"
-          placeholder="Yaşınızı yazınız."
+          placeholder="Hastanın yaşını yazınız."
           wrapperClasses="flex flex-col space-y-2"
-          label="Yaşınız (*):"
+          label="Yaşı (*):"
           labelClasses="text-secondary-300"
           inputClasses={`p-1.5 rounded-md outline-none bg-secondary-700 text-gray-400 focus:bg-secondary-800 focus:pl-4 transition-all ${
             formikContext.errors.reportInfos?.patientInfos?.age &&
